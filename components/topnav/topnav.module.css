@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wtgLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, .05);
+  cursor: pointer;
+}
+
+.wtgLogoImage {
+  display: flex;
+  margin-right: 1.25rem;
+  overflow: hidden;
+}
+
+.wtgLogoTitle {
+  display: flex;
+  font-size: large;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, .05);
+}
+
+.menuItem {
+  margin: 0 0.75rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: medium;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: unset;
+  }
+  .wtgLogo {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  background-color: rgba(255, 255, 255, .05);
+  border-radius: 0.75rem;
+  padding: 3rem;
+  margin-bottom: 1.5rem;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.image {
+  overflow: hidden;
+  border-radius: 1rem;
+  min-width: 15rem;
+  width: 15rem;
+  height: 15rem;
+  margin-right: 2.5rem;
+}
+
+.descWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.descImage, .desc {
+  display: flex;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.descImage {
+  display: none;
+}
+
+.socmedWrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: x-large;
+}
+
+.socmedWrapper > a {
+  text-decoration: none;
+}
+
+.socmedIconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: .3rem;
+  padding: .5rem;
+  color: var(--white-1);
+  text-decoration: none;
+}
+
+.socmedIcon {
+  margin-right: .5rem;
+  color: var(--blue-1);
+}
+
+.socmedIcon > svg  {
+  position: relative;
+  top: .250rem;
+  height: 2rem;
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .imageWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .image {
+    min-width: 12rem;
+    width: 12rem;
+    height: 12rem;
+  }
+  .desc {
+    display: none;
+  }
+  .descImage {
+    display: flex;
+    max-width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .descWrapper {
+    max-width: 24rem;
+  }
+  .image {
+    margin: 0;
+  }
+  .descImage {
+    display: none;
+  }
+  .desc {
+    display: flex;
+    text-align: center;
+  }
+  .socmedIconWrapper {
+    padding: .25rem;
+  }
+  .socmedWrapper, .desc {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .socmedIcon {
+    margin: 0;
+  }
+  .socmedText {
+    display: none;
+  }
+}
